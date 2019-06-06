@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-          
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="author" content=" " >
+  <meta name="author" content="Aaron Velasco " >
 
-<meta name="robots" content="index,follow">
-  <meta name="description" content="" >
-<!--    verificacion de la pagina web https://support.google.com/webmasters/answer/35179?visit_id=1-636389644532617369-3818959693&rd=1-->
-    <meta name="google-site-verification" content="..." /> 
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="description de la pagina" >
+<!--  verificacion de la pagina web https://support.google.com/webmasters/answer/35179?visit_id=1-636389644532617369-3818959693&rd=1-->
+    <meta name="google-site-verification" content="..." />
     <link rel="icon" type="image/png" sizes="120x120" href="media/Favicon.png">
     <meta name="keywords" content="" >
-  
+
     <title>Titulo</title>
 
   <!-- CSS vinculos  -->
@@ -21,17 +21,55 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  
+  <div class="carousel">
+    <a class="carousel-item" href="https://psicologiaymente.com/miscelanea/tatuajes-para-parejas"><img src="media/img/iniciopa1.jpg" width="50px" height="350px" ></a>
+    <a class="carousel-item" href="#two!"><img src="media/img/iniciopa2.jpg" width="250px" height="350px"></a>
+    <a class="carousel-item" href="#three!"><img src="media/img/iniciopa2.jpg" width="250px" height="350px"></a>
+    <a class="carousel-item" href="#four!"><img src="media/img/iniciopa3.jpg" width="250px" height="350px"></a>
+    <a class="carousel-item" href="#five!"><img src="media/img/iniciopa1.jpg" width="250px" height="350px"></a>
+  </div>
+  <hr>
+  <br>
+
+  <div align="center">
+    <img  class="materialboxed" width="650" src="media/img/iniciopa1.jpg" width="250px" height="250px">
+
+  </div>
+
+
+
+
+
   <!--  Scripts no borrar-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  
- <!--  scrip para la funciones de la pagina web-->
+
+ <!--  scrip para las funciones de la pagina web-->
   <script>
-    
+//carousel
+  document.addEventListener('DOMContentLoaded', function() {
+     var elems = document.querySelectorAll('.carousel');
+     var instances = M.Carousel.init(elems, options);
+   });
+
+   // Or with jQuery
+
+   $(document).ready(function(){
+     $('.carousel').carousel();
+   });
+//imagen
+   document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.materialboxed');
+  var instances = M.Materialbox.init(elems, options);
+});
+
+// Or with jQuery
+
+$(document).ready(function(){
+  $('.materialboxed').materialbox();
+});
   </script>
-  
 
   </body>
 </html>

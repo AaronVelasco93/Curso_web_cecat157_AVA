@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Gree Natura";
+  src: url("../fonts/green/GREEN NATURE.ttf");
+}
+
+p {
+  font-family: "Green Natura";
+  font-size: 150%;
+}
